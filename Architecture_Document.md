@@ -171,8 +171,6 @@ For last, here is the API actions of this service, the actions will be displayed
 | Get appointments by user id | GET<br />/api/appointement/{userId}    |
 | Get appointments by shop id | GET<br />/api/appointement/{shopId}    |
 
-
-
 The method to get all **shops** in the system will have some filters they being:
 
 | Name     | Type    |
@@ -181,8 +179,6 @@ The method to get all **shops** in the system will have some filters they being:
 | search   | String  |
 | ratting  | Float   |
 
-
-
 The search string will search the follow variables, using ElasticSearch:
 
 * name;
@@ -190,8 +186,6 @@ The search string will search the follow variables, using ElasticSearch:
 * city;
 * phoneNumber;
 * country.
-
-
 
 The method to get all **products** in the system will have some filters they being:
 
@@ -204,16 +198,12 @@ The search string will search the follow variables, using ElasticSearch:
 
 * name.
 
-
-
 The method to get all **ratting** in the system will have some filters they being:
 
 | Name        | Type  |
 | ----------- | ----- |
 | createdDate | Date  |
 | rate        | Float |
-
-
 
 The method to get all **appointments** in the system will have some filters they being:
 
@@ -226,8 +216,6 @@ The method to get all **appointments** in the system will have some filters they
 The search string will search the follow variables, using ElasticSearch:
 
 * name.
-
-
 
 # Notification-Service
 
@@ -243,30 +231,24 @@ The schema for the notifications will be this:
 
     "id": "5dfe3d8d-a722-4e16-9283-348576942171",
 
-    "recipient": "75719abc-478b-4884-ad97-57bdb2109fdb",
-
     "timeStamp": "2023-09-02T20:33:32+0000",
 
     "title": "Black friday promotion",
 
-    "description": "There is a promotion in the shop 50",
-
-    "read": false
+    "description": "There is a promotion in the shop 50"
 
 }
 
 For last, here is the API actions of this service, the actions will be displayed in the follow table:
 
-
-| Functionality                    | Path                                     |
-| -------------------------------- | ---------------------------------------- |
-| Get all notifications            | GET<br />/api/notification               |
-| Get notification by id           | GET<br />/api/notification/{id}          |
-| Get notification by recipient id | GET<br />/api/notification/{recipientId} |
-| Update notification by id        | PATCH<br />/api/notification/{id}        |
-| Create notification              | POST<br />/api/notification              |
-| Delete notification by id        | DELETE<br />/api/notification/{id}       |
-
+| Functionality             | Path                               |
+| ------------------------- | ---------------------------------- |
+| Get all notifications     | GET<br />/api/notification         |
+| Get notification by id    | GET<br />/api/notification/{id}    |
+|                           |                                    |
+| Update notification by id | PATCH<br />/api/notification/{id}  |
+| Create notification       | POST<br />/api/notification        |
+| Delete notification by id | DELETE<br />/api/notification/{id} |
 
 The method to get all **ratting** in the system will have some filters they being:
 
@@ -279,8 +261,6 @@ The method to get all **ratting** in the system will have some filters they bein
 The search string will search the follow variables, using ElasticSearch:
 
 * title.
-
-
 
 # Logs-Service
 
@@ -302,7 +282,6 @@ The schema for the Logs will be this:
 
 }
 
-
 For last, here is the API actions of this service, the actions will be displayed in the follow table:
 
 | Functionality       | Path                        |
@@ -310,8 +289,6 @@ For last, here is the API actions of this service, the actions will be displayed
 | Get all logs        | GET<br />/api/logs          |
 | Get logs by id      | GET<br />/api/logs/{id}     |
 | Get logs by user id | GET<br />/api/logs/{userId} |
-
-
 
 The method to get all **ratting** in the system will have some filters they being:
 
